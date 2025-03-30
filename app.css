@@ -244,6 +244,9 @@ section {
   text-transform: uppercase;
   font-weight: 500;
 }
+#skills {
+  padding: 5rem 0;
+}
 #services h3,
 #about h3,
 #project h3,

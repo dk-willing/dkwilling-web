@@ -7,7 +7,7 @@ const successMessage = document.querySelector(".success");
 
 // Get all navlinks anchor tags
 const allNavLinks = document.querySelectorAll(".nav__list a");
-const allSections = document.querySelectorAll("section");
+const allSections = document.querySelectorAll("main section");
 
 // Function to remove all active links
 const removeActiveLinks = () => {
@@ -43,7 +43,7 @@ contactModalCloseBtn.forEach((xMark) =>
   })
 );
 contactModalForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+  //   e.preventDefault();
   contactModalForm.classList.add("hidden");
   successMessage.classList.remove("hidden");
 });
