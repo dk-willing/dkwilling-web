@@ -83,6 +83,8 @@ header {
     url("img/hero-bg.jpg");
   background-size: cover;
   height: 100vh;
+  position: relative;
+  top: 0;
 }
 .header__nav {
   padding: 20px 5%;
@@ -90,6 +92,17 @@ header {
   align-items: center;
   justify-content: space-between;
   color: var(--white);
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: all 0.4s ease;
+  z-index: 100;
+}
+.scrolled {
+  background-color: var(--dark-gray);
+  box-shadow: 0 0 12px 4px rgba(144, 162, 253, 0.2);
 }
 .header__nav .logo,
 .footer__logo {
@@ -157,7 +170,8 @@ nav ul a:hover::after {
   text-align: center;
   width: 90%;
   max-width: 1000px;
-  margin: 120px auto;
+  margin: 0 auto;
+  padding-top: 18rem;
   color: var(--white);
 }
 .hero span {
@@ -469,14 +483,14 @@ footer {
   width: 100%;
   background-color: #33333371;
   backdrop-filter: blur(2px);
-  z-index: 10;
+  z-index: 101;
 }
 .modal__body {
   position: fixed;
   top: 10%;
   left: 50%;
   transform: translate(-50%);
-  z-index: 15;
+  z-index: 150;
 }
 .modal__body {
   background-color: var(--white);
