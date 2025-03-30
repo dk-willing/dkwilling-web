@@ -5,6 +5,17 @@ const contactModalCloseBtn = document.querySelectorAll(".fa-xmark");
 const contactModalForm = document.querySelector(".contact__modal-form");
 const successMessage = document.querySelector(".success");
 
+// Get all navlinks anchor tags
+const allNavLinks = document.querySelectorAll(".nav__list a");
+const allSections = document.querySelectorAll("section");
+
+// Function to remove all active links
+const removeActiveLinks = () => {
+  allNavLinks.forEach((link) => {
+    link.classList.remove("active-section");
+  });
+};
+
 const navbar = document.querySelector(".header__nav");
 
 // Listening to scroll effect on the windows
@@ -35,4 +46,12 @@ contactModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
   contactModalForm.classList.add("hidden");
   successMessage.classList.remove("hidden");
+});
+
+// Navlinks acnhors
+allNavLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    removeActiveLinks();
+    link.classList.add("active-section");
+  });
 });

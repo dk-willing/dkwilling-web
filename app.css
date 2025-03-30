@@ -130,6 +130,9 @@ nav ul a {
   color: var(--white);
   transition: all 0.5s ease;
 }
+nav ul a.active-section {
+  color: var(--link-bg);
+}
 nav ul a::after {
   content: "";
   width: 0;
@@ -145,6 +148,9 @@ nav ul a:hover {
   color: var(--link-bg);
 }
 nav ul a:hover::after {
+  width: 100%;
+}
+nav ul a.active-section::after {
   width: 100%;
 }
 .nav__cta__btn a {
