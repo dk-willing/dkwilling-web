@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="app.css" />
+
+    <!-- JavaScript -->
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <header>
+      <div class="header__nav">
+        <div class="logo">DK-WILLING<span>.</span></div>
+
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__list__item"><a href="#">Home</a></li>
+            <li class="nav__list__item"><a href="#services">Services</a></li>
+            <li class="nav__list__item"><a href="#about">About Me</a></li>
+            <li class="nav__list__item"><a href="#project">Project</a></li>
+            <li class="nav__list__item">
+              <a href="#contact" id="contact">Contact Me</a>
+            </li>
+          </ul>
+
+          <div class="nav__cta__btn">
+            <a
+              href="David-Kweku-Karikari-FlowCV-Resume-20250330.pdf"
+              target="_blank"
+              >View Resume <i class="ri-external-link-line"></i
+            ></a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero -->
+      <div class="hero">
+        <h1>Hi, I am <span>David Karikari</span></h1>
+        <p>
+          A passionate <span>Frontend Developer</span> dedicated to crafting
+          seamless, user-friendly, and visually stunning web experiences. <br />
+          Explore my work, and let's build something amazing together!
+        </p>
+
+        <!-- Social links -->
+        <ul class="social_links">
+          <li class="social_link__item">
+            <a href="https://github.com/dk-willing" target="_blank"
+              ><i class="ri-github-fill"></i
+            ></a>
+          </li>
+          <li class="social_link__item">
+            <a href="https://www.linkedin.com/in/davekarikari/" target="_blank"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+          </li>
+          <li class="social_link__item">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+          </li>
+          <li class="social_link__item">
+            <a href="mailto:davidkarikari89@gmail.com" target="_blank"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main section -->
+    <main>
+      <section id="services">
+        <div class="service__header">
+          <h4>Services</h4>
+          <h3>What <span>I Do:</span></h3>
+        </div>
+
+        <div class="services__cards">
+          <div class="services__card">
+            <div class="card__heading">
+              <div class="icon"><i class="ri-code-s-slash-line"></i></div>
+              <div class="list_num">01</div>
+            </div>
+            <div class="card__title">
+              <h4>Web Development</h4>
+              <p>
+                I use my knowledge in User Interface (UI) and User Experience
+                (UX), HTML, CSS, and JavaScript to build amazing user centered
+                web solution tailored to suit client's expectation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="services__card">
+            <div class="card__heading">
+              <div class="icon"><i class="fa-brands fa-uikit"></i></div>
+              <div class="list_num">02</div>
+            </div>
+            <div class="card__title">
+              <h4>User Interface Design</h4>
+              <p>
+                I design user-friendly interfaces that balance aesthetics and
+                functionality, ensuring a smooth and engaging experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="services__card">
+            <div class="card__heading">
+              <div class="icon"><i class="fa-solid fa-pencil"></i></div>
+              <div class="list_num">03</div>
+            </div>
+            <div class="card__title">
+              <h4>Content Writing</h4>
+              <p>
+                I write clear and engaging content that communicates ideas
+                effectively, making information easy to understand and
+                compelling.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="about">
+        <div class="service__header">
+          <h4>My Bio</h4>
+          <h3>About <span>Me:</span></h3>
+        </div>
+
+        <div class="about__grid">
+          <div class="card__img">
+            <img src="img/my-img.jpg" alt="My picture" />
+            <div class="img__icons">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-js"></i>
+            </div>
+          </div>
+
+          <div class="about__content">
+            <p>
+              Hi, I'm <span>David Karikari</span>, a passionate frontend
+              developer and student, currently balancing my studies with my
+              journey into the world of web development. With a strong
+              foundation in HTML, CSS, JavaScript, and Tailwind CSS, I
+              specialize in crafting clean, responsive, and user-friendly web
+              experiences.
+              <br />
+              <br />
+              I'm currently focused on honing my frontend development skills,
+              aiming to become a software engineer in the near future. Between
+              attending seven courses at school and coding whenever I get the
+              chance, I'm dedicated to learning, growing, and building impactful
+              digital solutions.
+              <br />
+              <br />
+              I believe that great web design is not just about aesthetics but
+              also about usability and performance. Whether it’s developing
+              smooth interfaces or optimizing user experiences, I enjoy solving
+              problems and bringing ideas to life. When I'm not coding, I'm
+              likely exploring new technologies.
+            </p>
+            <div class="nav__cta__btn">
+              <a
+                href="David-Kweku-Karikari-FlowCV-Resume-20250330.pdf"
+                target="_blank"
+                >View Resume <i class="ri-external-link-line"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="project">
+        <div class="service__header">
+          <h4>Portfolio</h4>
+          <h3>Featured <span>Projects:</span></h3>
+        </div>
+
+        <div class="services__cards">
+          <div class="services__card">
+            <img src="img/project-1.jpg" alt="" class="project__img" />
+            <div class="card__title">
+              <h4>Virtuoso Study Platform</h4>
+              <p>
+                Virtuoso is a web-based learning platform that offers
+                interactive programming courses. It guides users through
+                structured lessons, quizzes, and progress tracking, ensuring
+                mastery before advancing. Built with HTML, Tailwind CSS, and
+                JavaScript, it delivers a seamless and engaging learning
+                experience.
+              </p>
+              <a href="#" class="project__link link">View Project</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="services__card">
+            <img src="img/project-2.jpg" alt="" class="project__img" />
+            <div class="card__title">
+              <h4>50 JavaScript Projects</h4>
+              <p>
+                I'm building 50 mini JavaScript projects to sharpen my skills
+                and deepen my understanding of frontend development. Each
+                project focuses on real-world functionality, helping me master
+                JavaScript, DOM manipulation, and interactivity through hands-on
+                practice.
+              </p>
+              <a href="#" class="project__link link">View Project</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="services__card">
+            <img src="img/project-3.png" alt="" class="project__img" />
+            <div class="card__title">
+              <h4>Omnifood Course Project</h4>
+              <p>
+                Omnifood is a modern, responsive food delivery website designed
+                with CSS and web design principles in mind. It features a clean
+                and intuitive UI, showcasing seamless navigation, optimized
+                layouts, and a visually appealing design to enhance the user
+                experience.
+              </p>
+              <a href="#" class="project__link link">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="service__header">
+          <h4>Skills</h4>
+          <h3>Technical <span>Skills:</span></h3>
+        </div>
+
+        <div class="skills__grid">
+          <div class="skills__card">
+            <div class="skills__text-content">
+              <h4>HTML<i class="fa-brands fa-html5"></i></h4>
+            </div>
+          </div>
+
+          <div class="skills__card">
+            <div class="skills__text-content">
+              <h4>CSS<i class="fa-brands fa-css3-alt"></i></h4>
+            </div>
+          </div>
+
+          <div class="skills__card">
+            <div class="skills__text-content">
+              <h4>JavaScript<i class="fa-brands fa-js"></i></h4>
+            </div>
+          </div>
+
+          <div class="skills__card">
+            <div class="skills__text-content">
+              <h4>Git & GitHub<i class="fa-brands fa-github"></i></h4>
+            </div>
+          </div>
+
+          <div class="skills__card">
+            <div class="skills__text-content">
+              <h4>React<i class="fa-brands fa-react"></i></h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="github">
+          <p>GitHub Contribution</p>
+          <img
+            src="https://ghchart.rshah.org/dk-willing"
+            alt="GitHub Contribution Graph"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer__logo">DK-WILLING<span>.</span></div>
+        <div class="footer__main__nav">
+          <nav>
+            <ul class="footer__nav">
+              <li class="footer__nav__item">
+                <a href="#">Back to Top</a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#services">Services</a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#project">Projects</a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#" id="contact">Contact Me</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="social__link">
+            <p>Get <span>Man:</span></p>
+            <a href="https://github.com/dk-willing" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/davekarikari/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="ContactModal" style="display: none">
+      <div class="overlay"></div>
+      <div class="modal__body">
+        <form action="" class="contact__modal-form">
+          <i class="fa-solid fa-xmark"></i>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="John Doe"
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="example@company.com"
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="We've got an offer for you"
+            cols="10"
+            rows="5"
+          ></textarea>
+
+          <button type="submit">
+            Send Message<i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+        <p class="hidden success">
+          <i class="fa-solid fa-xmark"></i>
+          <span
+            >Thank you for contacting me, I will respond as soon as
+            possible.</span
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
