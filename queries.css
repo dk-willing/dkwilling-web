@@ -1,0 +1,143 @@
+/* Tablet max-width: 960px */
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+  .hero,
+  header {
+    height: 50vh;
+  }
+
+  h1 {
+    font-size: 5.4rem;
+    margin-bottom: 15px;
+  }
+
+  .hero p br {
+    display: none;
+  }
+
+  nav {
+    gap: 2rem;
+  }
+
+  section {
+    padding: 10rem 5%;
+  }
+
+  .services__cards {
+    gap: 2rem;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  #skills .skills__text-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .card__img {
+    width: 38rem;
+    height: 38rem;
+  }
+
+  .card__img img {
+    width: 32rem;
+    height: 32rem;
+  }
+}
+
+/* Mobile views */
+@media (max-width: 44em) {
+  #skills .skills__text-content h4 {
+    font-size: 1rem;
+  }
+
+  .services__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about__grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .about__content .nav__cta__btn {
+    width: 100%;
+    margin: 25px auto;
+  }
+  .about__content .nav__cta__btn a {
+    display: inline-block;
+  }
+  .about__content {
+    text-align: center;
+  }
+  .about__content p {
+    text-align: left;
+  }
+
+  .mobile-nav {
+    display: block;
+    z-index: 10000;
+    transition: all 0.4s ease;
+  }
+  .mobile-nav i {
+    font-size: 2.4rem;
+  }
+
+  .header-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--dark-gray);
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.4s ease;
+  }
+  .header-nav.hide {
+    max-height: 0;
+  }
+  .header-nav.open {
+    max-height: 500px;
+    padding: 8rem;
+  }
+  .header-nav ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 33rem) {
+  body {
+    line-height: 2.4rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .services__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .image-box {
+    width: 90%;
+  }
+  .github img {
+    width: 100%;
+  }
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  #skills .skills__text-content h4 {
+    font-size: 1.2rem;
+  }
+}
