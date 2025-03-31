@@ -118,6 +118,12 @@ themeBtn.addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
 
   if (document.body.classList.contains("light-mode")) {
+    themeBtn.innerHTML = `<i class="ri-moon-line"></i>`;
+  } else {
+    themeBtn.innerHTML = `<i class="ri-sun-line"></i>`;
+  }
+
+  if (document.body.classList.contains("light-mode")) {
     localStorage.setItem("my-Theme", "light");
   } else {
     localStorage.setItem("my-Theme", "dark");

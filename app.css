@@ -185,7 +185,7 @@ nav ul a.active-section::after {
   font-size: var(--text-md);
   border-radius: var(--radius-sm);
   font-weight: 500;
-  color: var(--white);
+  color: #fff;
 
   transition: all 0.4s ease;
 }
@@ -738,22 +738,24 @@ footer {
   width: 4.2rem;
   height: 4.2rem;
   cursor: pointer;
-  background-color: var(--white);
+  background-color: #333;
   border-radius: 50%;
 
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.4s ease;
+
+  box-shadow: 0 0 12px 1px var(--footer-dark);
 }
 .theme-btn:hover {
   background-color: var(--link-bg-hover);
 }
 .theme-btn:hover i {
-  color: var(--white);
+  color: #fff;
 }
 .theme-btn i {
   font-size: 2.8rem;
-  color: var(--link-bg);
+  color: #fff;
   transition: all 0.4s ease;
 }
