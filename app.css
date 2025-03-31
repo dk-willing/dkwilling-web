@@ -18,9 +18,24 @@
   --black: #000;
   --dark-gray: #111;
   --orange: #fd7e14;
+  --linear-gradient: linear-gradient(#0b0a0af1, #030303fa);
+  --footer-dark: #272728;
 
   /* Border-Radius */
   --radius-sm: 5px;
+}
+
+.light-mode {
+  --link-bg: #007acc; /* Softer blue */
+  --link-bg-hover: #005f99; /* Slightly darker blue for hover */
+  --white: #000;
+  --gray: #333; /* Very light gray background */
+  --gray-hover: #d6d6d6; /* Medium gray for hover effects */
+  --black: #fff; /* White background instead of black */
+  --dark-gray: #ffffff; /* Light gray instead of dark gray */
+  --orange: #ff8800; /* A brighter orange */
+  --linear-gradient: linear-gradient(#fffefef1, #f0f0f0dd);
+  --footer-dark: #f8f8f8ec;
 }
 
 * {
@@ -81,8 +96,7 @@ p {
 
 /* Header */
 header {
-  background-image: linear-gradient(#0b0a0af1, #030303fa),
-    url("img/hero-bg.jpg");
+  background-image: var(--linear-gradient), url("img/hero-bg.jpg");
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -563,7 +577,7 @@ section {
   filter: blur(1px);
 }
 footer {
-  background-color: #272728;
+  background-color: var(--footer-dark);
 }
 .footer-container {
   padding: 9.6rem 5%;
@@ -619,6 +633,7 @@ footer {
 }
 .modal__body {
   position: fixed;
+
   top: 10%;
   left: 50%;
   transform: translate(-50%);
@@ -626,6 +641,7 @@ footer {
 }
 .modal__body {
   background-color: var(--white);
+  color: var(--black);
 
   border-radius: var(--radius-sm);
   width: 350px;
@@ -645,6 +661,8 @@ footer {
   margin-bottom: 15px;
   padding: 0.8rem;
   border: 1px solid #333;
+  background-color: var(--white);
+  color: var(--black);
   border-radius: 4px;
   resize: none;
 }
@@ -715,4 +733,30 @@ footer {
 .fade.show {
   visibility: visible;
   opacity: 1;
+}
+.theme-btn {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 4.2rem;
+  height: 4.2rem;
+  cursor: pointer;
+  background-color: var(--white);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.theme-btn:hover {
+  background-color: var(--link-bg-hover);
+}
+.theme-btn:hover i {
+  color: var(--white);
+}
+.theme-btn i {
+  font-size: 2.8rem;
+  color: var(--link-bg);
+  transition: all 0.4s ease;
 }

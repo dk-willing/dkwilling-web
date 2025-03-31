@@ -110,3 +110,26 @@ mobileNav.addEventListener("click", () => {
     })
   );
 });
+
+// Light and Dark Mode
+const themeBtn = document.querySelector(".theme-btn");
+
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+
+  if (document.body.classList.contains("light-mode")) {
+    localStorage.setItem("my-Theme", "light");
+  } else {
+    localStorage.setItem("my-Theme", "dark");
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("my-Theme") === "light") {
+    document.body.classList.add("light-mode");
+  } else if (localStorage.getItem("my-Theme") === "dark") {
+    document.body.classList.remove("light-mode");
+  } else {
+    document.body.classList.remove("light-mode");
+  }
+});

@@ -144,4 +144,8 @@
   .services__card::before {
     padding: 3px;
   }
+
+  p {
+    font-size: 1.4rem !important;
+  }
 }
