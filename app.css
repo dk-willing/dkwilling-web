@@ -551,8 +551,7 @@ section {
   padding: 2rem;
   background-color: var(--dark-gray);
 }
-.github .image-box::after,
-.github .image-box::before {
+.github .image-box::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -562,14 +561,14 @@ section {
   translate: -50% -50%;
   background-image: conic-gradient(
     from var(--angle),
-    transparent 50%,
+    transparent 90%,
     var(--white),
     var(--link-bg)
   );
   z-index: -1;
   border-radius: var(--radius-sm);
   padding: 1px;
-  animation: rotation 3s linear infinite running;
+  animation: rotation 6s linear infinite running;
   filter: blur(1px);
 }
 footer {
