@@ -140,4 +140,8 @@
   #skills .skills__text-content h4 {
     font-size: 1.2rem;
   }
+  .services__card::after,
+  .services__card::before {
+    padding: 3px;
+  }
 }
