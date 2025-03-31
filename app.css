@@ -18,7 +18,7 @@
   --black: #000;
   --dark-gray: #111;
   --orange: #fd7e14;
-  --linear-gradient: linear-gradient(#0b0a0af1, #030303fa);
+  --linear-gradient: linear-gradient(#0b0a0ae6, #030303ef);
   --footer-dark: #272728;
 
   /* Border-Radius */
@@ -34,7 +34,7 @@
   --black: #fff; /* White background instead of black */
   --dark-gray: #ffffff; /* Light gray instead of dark gray */
   --orange: #ff8800; /* A brighter orange */
-  --linear-gradient: linear-gradient(#fffefef1, #f0f0f0dd);
+  --linear-gradient: linear-gradient(#fffffff3, #fffffff6);
   --footer-dark: #f8f8f8ec;
 }
 
@@ -426,10 +426,6 @@ section {
   z-index: -1;
   animation: rotation 3s linear infinite running;
 }
-.card__img::before {
-  filter: blur(1.2rem);
-  opacity: 0.5;
-}
 .card__img img {
   width: 100%;
   border-radius: 50%;
@@ -636,6 +632,7 @@ footer {
 
   top: 10%;
   left: 50%;
+  width: 90%;
   transform: translate(-50%);
   z-index: 150;
 }
