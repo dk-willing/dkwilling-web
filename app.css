@@ -622,8 +622,8 @@ footer {
   bottom: 0;
   height: 100%;
   width: 100%;
-  background-color: #33333371;
-  backdrop-filter: blur(2px);
+  background-color: #333333c7;
+  backdrop-filter: blur(4px);
   z-index: 101;
 }
 .modal__body {
@@ -636,8 +636,8 @@ footer {
   z-index: 150;
 }
 .modal__body {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: #fff;
+  color: #111;
 
   border-radius: var(--radius-sm);
   width: 350px;
@@ -657,8 +657,8 @@ footer {
   margin-bottom: 15px;
   padding: 0.8rem;
   border: 1px solid #333;
-  background-color: var(--white);
-  color: var(--black);
+  background-color: #fff;
+  color: #111;
   border-radius: 4px;
   resize: none;
 }
@@ -669,8 +669,8 @@ footer {
 }
 .contact__modal-form button {
   padding: 0.8rem 3rem;
-  background-color: var(--link-bg);
-  color: var(--white);
+  background-color: #00a9ff;
+  color: #fff;
   border: none;
   display: flex;
   gap: 5px;
