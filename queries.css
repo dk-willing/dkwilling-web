@@ -89,7 +89,7 @@
   }
 
   .header-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -147,5 +147,16 @@
 
   p {
     font-size: 1.4rem !important;
+  }
+
+  .footer__nav .footer__nav__item a {
+    font-size: 1.6rem;
+  }
+
+  .social__link p {
+    font-size: 1.6rem;
+  }
+  .social__link a i {
+    font-size: 3.2rem;
   }
 }

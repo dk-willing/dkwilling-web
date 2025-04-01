@@ -31,16 +31,16 @@ window.addEventListener("scroll", () => {
 contactElement.forEach((item) => {
   item.addEventListener("click", (e) => {
     e.preventDefault();
-    contactModal.style.display = "block";
+    contactModal.classList.add("open");
   });
 });
 
 contactModalOverlay.addEventListener("click", () => {
-  contactModal.style.display = "none";
+  contactModal.classList.remove("open");
 });
 contactModalCloseBtn.forEach((xMark) =>
   xMark.addEventListener("click", () => {
-    contactModal.style.display = "none";
+    contactModal.classList.remove("open");
   })
 );
 contactModalForm.addEventListener("submit", (e) => {
