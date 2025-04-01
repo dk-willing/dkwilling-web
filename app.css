@@ -637,6 +637,7 @@ footer {
   bottom: 2%;
   left: 50%;
   width: 90%;
+  box-sizing: border-box;
   transform: translate(-50%);
   z-index: 150;
 
@@ -654,6 +655,7 @@ footer {
 
   border-radius: var(--radius-sm);
   width: 350px;
+  max-width: 95%;
   /* padding: 2.5rem; */
 
   transition: all 0.4s ease;
@@ -667,6 +669,7 @@ footer {
 .modal__body textarea {
   display: block;
   width: 100%;
+  max-width: 100%;
   margin-bottom: 15px;
   padding: 0.8rem;
   border: 1px solid #333;
@@ -674,6 +677,7 @@ footer {
   color: #111;
   border-radius: 4px;
   resize: none;
+  box-sizing: border-box;
 }
 .modal__body input:focus,
 .modal__body textarea:focus {
@@ -771,4 +775,7 @@ footer {
   font-size: 2.8rem;
   color: #fff;
   transition: all 0.4s ease;
+}
+input:focus {
+  transform: none !important; /* Removes unintended scaling */
 }
