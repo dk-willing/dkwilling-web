@@ -1,3 +1,5 @@
+"use strict";
+
 const contactElement = document.querySelectorAll("#contact");
 const contactModal = document.querySelector("#ContactModal");
 const contactModalOverlay = document.querySelector(".overlay");
@@ -138,4 +140,34 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     document.body.classList.remove("light-mode");
   }
+});
+
+const myAnimatedSkills = gsap.utils.toArray(".animate-skill-text");
+const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.2 });
+
+myAnimatedSkills.forEach((skill) => {
+  const skillText = new SplitType(skill);
+
+  tl.from(
+    skillText.chars,
+    {
+      opacity: 0,
+      y: 30,
+      rotateX: 90,
+      stagger: 0.02,
+      duration: 1.2,
+    },
+    "<"
+  )
+    .to({}, { duration: 2 })
+    .to(
+      skillText.chars,
+      {
+        opacity: 0,
+        y: -10,
+        rotateX: -90,
+        duration: 1.2,
+      },
+      "<1"
+    );
 });

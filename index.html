@@ -31,6 +31,12 @@
       rel="stylesheet"
     />
 
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Font awesome cdn -->
     <link
       rel="stylesheet"
@@ -44,6 +50,9 @@
     <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="queries.css" />
     <!-- JavaScript -->
+    <!-- CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="app.js" defer></script>
   </head>
   <body class="light-theme">
@@ -83,11 +92,20 @@
         <h1 class="animated-section--1">
           Hi, I am <span>David Karikari</span>
         </h1>
-        <p class="animated-section--1">
-          A passionate <span>Frontend Developer</span> dedicated to crafting
-          seamless, user-friendly, and visually stunning web experiences. <br />
-          Explore my work, and let's build something amazing together!
-        </p>
+        <div class="animated-section--1">
+          <p>A passionate</p>
+          <p class="animate-skill-text">Frontend Developer</p>
+          <p class="animate-skill-text">UI Designer</p>
+          <p class="animate-skill-text">Web Developer</p>
+          <p class="animate-skill-text">Content Writer</p>
+          <p>
+            I combine technical precision with creative design to build
+            responsive, accessible, and engaging web interfaces. With a strong
+            foundation in both code and content, I aim to deliver solutions that
+            are not only functional but also thoughtfully designed and
+            effectively communicated
+          </p>
+        </div>
 
         <!-- Social links -->
         <ul class="social_links">
@@ -240,17 +258,16 @@
           <div class="services__card">
             <img src="img/project-1.jpg" alt="" class="project__img" />
             <div class="card__title">
-              <h4>Virtuoso Study Platform</h4>
+              <h4>Store Front Project</h4>
               <p>
-                Virtuoso is a web-based learning platform that offers
-                interactive programming courses. It guides users through
-                structured lessons, quizzes, and progress tracking, ensuring
-                mastery before advancing. Built with HTML, Tailwind CSS, and
-                JavaScript, it delivers a seamless and engaging learning
-                experience.
+                This project features a clean UI design, product listing page. I
+                focused on creating a visually appealing layout with intuitive
+                navigation, ensuring the design adapts smoothly across all
+                devices. The project highlights my frontend skills in building
+                component-based layouts.
               </p>
               <a
-                href="https://github.com/dk-willing/hci-assignment.git"
+                href="https://github.com/dk-willing/store-project.git"
                 target="_blank"
                 class="project__link link"
                 >View Project</a
@@ -335,6 +352,36 @@
             <div class="skills__card fade">
               <div class="skills__text-content">
                 <h4>React<i class="fa-brands fa-react"></i></h4>
+              </div>
+            </div>
+
+            <div class="skills__card fade">
+              <div class="skills__text-content">
+                <h4>TailwindCSS<i class="bx bxl-tailwind-css"></i></h4>
+              </div>
+            </div>
+
+            <div class="skills__card fade">
+              <div class="skills__text-content">
+                <h4>Bootstrap<i class="bx bxl-bootstrap"></i></h4>
+              </div>
+            </div>
+
+            <div class="skills__card fade">
+              <div class="skills__text-content">
+                <h4>Sass<i class="bx bxl-sass"></i></h4>
+              </div>
+            </div>
+
+            <div class="skills__card fade">
+              <div class="skills__text-content">
+                <h4>Chrome DevTools<i class="bx bxl-chrome"></i></h4>
+              </div>
+            </div>
+
+            <div class="skills__card fade">
+              <div class="skills__text-content">
+                <h4>Figma<i class="bx bxl-figma"></i></h4>
               </div>
             </div>
           </div>
