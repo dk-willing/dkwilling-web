@@ -180,4 +180,7 @@
   .social__link a i {
     font-size: 3.2rem;
   }
+  div.animated-section--1 > p:last-child {
+    text-align: justify;
+  }
 }

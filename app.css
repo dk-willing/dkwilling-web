@@ -227,6 +227,10 @@ nav ul a.active-section::after {
   height: 100vh;
   color: var(--white);
 }
+.hero h1 {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
 .hero span {
   color: var(--link-bg);
 }
@@ -240,7 +244,7 @@ nav ul a.active-section::after {
 }
 .social_links .social_link__item {
   background-color: var(--gray);
-  padding: 1rem;
+  padding: 0.5rem;
 
   border: 3px solid transparent;
 
