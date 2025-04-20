@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const myAnimatedSkills = gsap.utils.toArray(".animate-skill-text");
-const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.2 });
+const tl = gsap.timeline({ repeat: -1, repeatDelay: 0 });
 
 myAnimatedSkills.forEach((skill) => {
   const skillText = new SplitType(skill);
@@ -154,7 +154,7 @@ myAnimatedSkills.forEach((skill) => {
       opacity: 0,
       y: 30,
       rotateX: 90,
-      stagger: 0.02,
+      stagger: 0.06,
       duration: 1.2,
     },
     "<"

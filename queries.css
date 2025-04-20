@@ -4,6 +4,9 @@
   html {
     font-size: 50%;
   }
+  p.animate-skill-text {
+    font-size: 3rem;
+  }
   .hero,
   header {
     height: 70vh;
@@ -55,6 +58,14 @@
 @media (max-width: 44em) {
   #skills .skills__text-content h4 {
     font-size: 1rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  p.animate-skill-text {
+    font-size: 3rem;
   }
 
   .services__cards {
@@ -109,12 +120,17 @@
   .header-nav ul {
     flex-direction: column;
   }
+
+  .skills__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 33rem) {
   body {
     line-height: 2.4rem;
   }
+
   h1 {
     font-size: 4rem;
   }
@@ -146,7 +162,12 @@
   }
 
   p {
-    font-size: 1.4rem !important;
+    font-size: 1.8rem !important;
+    line-height: 1.7;
+  }
+
+  p.animate-skill-text {
+    font-size: 2rem !important;
   }
 
   .footer__nav .footer__nav__item a {
